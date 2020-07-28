@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
-	"homepage": "https://hananahmad240.github.io/hangmangame",
+	"homepage": "https://hananahmad240.github.io/hangmangame/",
 	"scripts": {
 		"deploy": "gh-pages -d ./"
 	},
