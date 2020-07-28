@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../public/css/style.css" />
-		<title>Document</title>
-	</head>
 
-	<body>
-		<h1>Hamgman</h1>
-		<p>Find the hidden word - Enter the letter</p>
-		<div class="game-container">
-			<svg height="250" width="300" class="figure-container">
-				<!-- this x and y property set from according to width and height of svg -->
-				<!-- rod -->
-				<line x1="60" y1="20" x2="140" y2="20"></line>
-				<line x1="140" y1="20" x2="140" y2="50"></line>
-				<line x1="60" y1="20" x2="60" y2="230"></line>
-				<line x1="20" y1="230" x2="100" y2="230"></line>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./public/css/style.css" />
+	<title>Document</title>
+</head>
 
-				<!-- head of man -->
-				<!-- cordainate of x and cordainate of y -->
-				<circle cx="140" cy="70" r="20" class="figure-part"></circle>
-				<!-- body of man -->
-				<line x1="140" y1="90" x2="140" y2="150" class="figure-part"></line>
-				<!-- arms of man -->
-				<!-- left arm -->
-				<line x1="140" y1="120" x2="120" y2="100" class="figure-part"></line>
-				<!--right arm  -->
-				<line x1="140" y1="120" x2="160" y2="100" class="figure-part"></line>
+<body>
+	<h1>Hamgman</h1>
+	<p>Find the hidden word - Enter the letter</p>
+	<div class="game-container">
+		<svg height="250" width="300" class="figure-container">
+			<!-- this x and y property set from according to width and height of svg -->
+			<!-- rod -->
+			<line x1="60" y1="20" x2="140" y2="20"></line>
+			<line x1="140" y1="20" x2="140" y2="50"></line>
+			<line x1="60" y1="20" x2="60" y2="230"></line>
+			<line x1="20" y1="230" x2="100" y2="230"></line>
 
-				<!-- left legs -->
-				<line x1="140" y1="150" x2="120" y2="180" class="figure-part"></line>
-				<!-- right leg -->
-				<line x1="140" y1="150" x2="160" y2="180" class="figure-part"></line>
-			</svg>
+			<!-- head of man -->
+			<!-- cordainate of x and cordainate of y -->
+			<circle cx="140" cy="70" r="20" class="figure-part"></circle>
+			<!-- body of man -->
+			<line x1="140" y1="90" x2="140" y2="150" class="figure-part"></line>
+			<!-- arms of man -->
+			<!-- left arm -->
+			<line x1="140" y1="120" x2="120" y2="100" class="figure-part"></line>
+			<!--right arm  -->
+			<line x1="140" y1="120" x2="160" y2="100" class="figure-part"></line>
 
-			<div class="wrong-letters-container">
-				<div id="wrong-letters">
-					<!-- <p>Wrong</p>
+			<!-- left legs -->
+			<line x1="140" y1="150" x2="120" y2="180" class="figure-part"></line>
+			<!-- right leg -->
+			<line x1="140" y1="150" x2="160" y2="180" class="figure-part"></line>
+		</svg>
+
+		<div class="wrong-letters-container">
+			<div id="wrong-letters">
+				<!-- <p>Wrong</p>
 					<span>
 						a,b,c,d,e
 					</span> -->
-				</div>
 			</div>
+		</div>
 
-			<div class="word" id="word">
-				<!-- <div class="letter">h</div>
+		<div class="word" id="word">
+			<!-- <div class="letter">h</div>
 				<div class="letter">e</div>
 				<div class="letter">l</div>
 				<div class="letter">l</div>
 				<div class="letter">o</div> -->
-			</div>
 		</div>
+	</div>
 
-		<!-- container  for final message -->
-		<div class="popup-container" id="popup-container">
-			<div class="popup">
-				<!-- <h2 id="final-message">You Have Won</h2> -->
-				<h2 id="final-message"></h2>
-				<button id="play-button">Play Again</button>
-			</div>
+	<!-- container  for final message -->
+	<div class="popup-container" id="popup-container">
+		<div class="popup">
+			<!-- <h2 id="final-message">You Have Won</h2> -->
+			<h2 id="final-message"></h2>
+			<button id="play-button">Play Again</button>
 		</div>
+	</div>
 
-		<!-- notification  -->
-		<div class="notification-container" id="notification-container">
-			<p>You Have Already entered this letter</p>
-		</div>
-		<script src="../public/js/main.js"></script>
-	</body>
+	<!-- notification  -->
+	<div class="notification-container" id="notification-container">
+		<p>You Have Already entered this letter</p>
+	</div>
+	<script src="./public/js/main.js"></script>
+</body>
+
 </html>
